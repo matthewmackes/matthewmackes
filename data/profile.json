@@ -1,0 +1,16 @@
+{
+  "name": "Matthew Mackes",
+  "headline": "Product & engineering leader focused on intelligent audio platforms.",
+  "summary": "Leader in building reliable, performance-focused systems that turn complex audio workflows into clear outcomes. This site complements the LinkedIn profile with real-time project updates and operational insight.",
+  "focus": ["AI Audio", "Systems Leadership", "Product Strategy"],
+  "now": "Advancing map2-audio with reliability improvements, performance tuning, and automation that keeps teams aligned on what matters.",
+  "mission": "Create signal-rich, dependable systems that help teams ship faster with confidence.",
+  "skills": ["Audio Systems", "AI Tooling", "Performance Engineering", "Product Leadership", "Automation"],
+  "mentions": ["Add talks, demos, or articles that showcase impact."],
+  "roadmap": [
+    "Expand automation coverage to additional subsystems.",
+    "Ship reliability and performance benchmarks.",
+    "Polish developer tooling for faster iteration."
+  ],
+  "contact": "Reach out for partnerships, product strategy, or technical leadership engagements."
+}

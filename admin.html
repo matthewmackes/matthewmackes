@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Studio · Post Subjects</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <section class="hero admin-hero">
+    <div class="hero-content">
+      <nav class="nav">
+        <div class="logo">Admin Studio</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="#subjects">Subjects</a>
+          <a href="#export">Export</a>
+        </div>
+      </nav>
+
+      <h1 class="hero-title">Curate post subjects with precision.</h1>
+      <p class="hero-subtitle">
+        Manage the categories that drive your AI updates. Add keywords, refine focus, and export your configuration
+        with a clean, Apple-inspired interface.
+      </p>
+      <div class="cta-row">
+        <button class="button primary" data-action="seed">Seed with defaults</button>
+        <button class="button secondary" data-action="clear">Clear all</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="subjects">
+    <div class="grid">
+      <div class="card admin-card">
+        <span class="badge">New Subject</span>
+        <h3>Add a post subject</h3>
+        <form class="admin-form" data-form>
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Performance Issues" required />
+          </label>
+          <label>
+            Description
+            <textarea name="description" rows="3" placeholder="Performance degradation, latency issues" required></textarea>
+          </label>
+          <label>
+            Keywords (comma separated)
+            <input type="text" name="keywords" placeholder="slow, latency, bottleneck" required />
+          </label>
+          <button class="button primary" type="submit">Add Subject</button>
+        </form>
+      </div>
+
+      <div class="card admin-card">
+        <span class="badge">Current Subjects</span>
+        <h3>Active subject list</h3>
+        <div class="subject-list" data-subject-list></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="export">
+    <div class="grid">
+      <div class="card admin-card">
+        <span class="badge">Export</span>
+        <h3>Download configuration</h3>
+        <p>Export your post subject JSON for backup or version control.</p>
+        <button class="button secondary" data-action="export">Download JSON</button>
+      </div>
+      <div class="card admin-card">
+        <span class="badge">Import</span>
+        <h3>Import configuration</h3>
+        <p>Paste JSON to replace the current subject list.</p>
+        <textarea class="admin-textarea" data-import-input rows="6" placeholder="Paste JSON array here..."></textarea>
+        <button class="button primary" data-action="import">Import JSON</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">Admin Studio · Local-first configuration · Built for clarity</footer>
+
+  <script src="assets/js/admin.js" defer></script>
+</body>
+</html>

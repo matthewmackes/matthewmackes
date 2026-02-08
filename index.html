@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matthew Mackes · Daily Updates</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-content">
+      <nav class="nav">
+        <div class="logo">Matthew Mackes</div>
+        <div class="nav-links">
+          <a href="#welcome">Welcome</a>
+          <a href="#bio">Bio</a>
+          <a href="#featured">Featured</a>
+          <a href="#platform">Platform</a>
+          <a href="#now">Now</a>
+          <a href="#skills">Skills</a>
+          <a href="#updates">Updates</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#weather">Weather</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <h1 class="hero-title">Daily project signals, crafted with clarity and calm.</h1>
+      <p class="hero-subtitle">
+        A refined, Apple-inspired hub for automated updates, thoughtful summaries, and real-world context from the
+        map2-audio project ecosystem.
+      </p>
+      <div class="cta-row">
+        <a class="button primary" href="https://github.com/matthewmackes/map2-audio" target="_blank" rel="noreferrer">
+          View map2-audio
+        </a>
+        <a class="button secondary" href="https://www.linkedin.com/in/matthewmackes/" target="_blank" rel="noreferrer">
+          LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="welcome">
+    <div class="featured">
+      <div class="card">
+        <span class="badge">Welcome</span>
+        <h3>Welcome to the daily update studio</h3>
+        <p>
+          This site is built to surface meaningful changes and insights from active development.
+          It blends automation with a clean, photo-realistic interface to keep you focused on what matters.
+        </p>
+        <p>
+          Every update is generated only when something truly changes. No noise. No clutter. Just signal.
+        </p>
+      </div>
+      <div class="card" id="bio">
+        <span class="badge">Bio</span>
+        <div class="profile-row">
+          <img class="profile-photo" src="https://avatars.githubusercontent.com/matthewmackes" alt="Matthew Mackes" />
+          <div>
+            <h3 data-profile-name>Matthew Mackes</h3>
+            <p class="profile-title" data-profile-headline>Product & engineering leader focused on intelligent audio platforms.</p>
+          </div>
+        </div>
+        <p data-profile-summary>
+          Explore Matthew's professional background, leadership journey, and technical depth on LinkedIn.
+          This blog complements that profile by showcasing live project activity and operational updates.
+        </p>
+        <div class="profile-tags" data-profile-focus>
+          <span class="badge">AI Audio</span>
+          <span class="badge">Systems Leadership</span>
+          <span class="badge">Product Strategy</span>
+        </div>
+        <p>
+          <a class="button secondary" href="https://www.linkedin.com/in/matthewmackes/" target="_blank" rel="noreferrer">
+            Visit LinkedIn →
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="featured">
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Featured Work</span>
+        <h3>map2-audio</h3>
+        <p>
+          The flagship project powering this site—focused on real-time audio intelligence, performance, and reliability.
+        </p>
+        <div class="cta-row">
+          <a class="button primary" href="https://github.com/matthewmackes/map2-audio" target="_blank" rel="noreferrer">
+            View Repository
+          </a>
+          <a class="button secondary" href="https://github.com/matthewmackes/map2-audio/releases" target="_blank" rel="noreferrer">
+            Releases
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <span class="badge">Momentum</span>
+        <h3>Live GitHub signal</h3>
+        <div class="stat-grid" data-github-stats>
+          <div>
+            <div class="stat-value" data-stars>—</div>
+            <div class="stat-label">Stars</div>
+          </div>
+          <div>
+            <div class="stat-value" data-forks>—</div>
+            <div class="stat-label">Forks</div>
+          </div>
+          <div>
+            <div class="stat-value" data-issues>—</div>
+            <div class="stat-label">Open Issues</div>
+          </div>
+          <div>
+            <div class="stat-value" data-updated>—</div>
+            <div class="stat-label">Last Updated</div>
+          </div>
+        </div>
+        <p class="weather-meta">Auto-refreshes every 24 hours.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section platform-deep-dive">
+    <div class="card platform-card">
+      <span class="badge">Learn About</span>
+      <h2 class="platform-title">Mackes Audio Platform: Node</h2>
+      
+      <div class="platform-content">
+        <p>
+          What truly sets MAP2 apart is its triple-interface architecture, ensuring accessibility in any environment. Musicians can control the platform through a web-based dashboard built with React/TypeScript for remote or desktop access, a sophisticated Terminal User Interface (TUI) using the Textual framework for headless server environments, or a dedicated LCD display system (I2C/Serial) for hardware-like control surfaces inspired by high-end processors like the Kemper Profiler and Line 6 Helix. Each interface provides real-time monitoring, effect chain editing, preset management, and system status visibility, synchronized across all modes via the event bus and WebSocket streaming for live updates.
+        </p>
+        
+        <p>
+          The audio processing capabilities are comprehensive and professional-grade. The native processor library includes dynamics (compressor, limiter, noise gate), EQ (8-band parametric), convolution for impulse responses, and spectrum analysis for metering. Beyond these, MAP2 leverages the thriving LV2 plugin ecosystem, allowing users to load virtually any Linux audio plugin, and features Neural Amp Modeling (NAM) for authentic amp and pedal emulation using AI-generated profiles. The MIDI system is equally sophisticated, offering full keyboard/controller mapping with MIDI learn, program change support, note binding, and CC mapping—making hardware controllers feel like first-class citizens in the platform.
+        </p>
+        
+        <p>
+          Under the hood, MAP2 prioritizes reliability and observability with enterprise-grade features that make it production-ready. The system includes comprehensive health monitoring with configurable thresholds for temperature, CPU, memory, and disk usage; automated cluster discovery via mDNS; graceful fallback mechanisms for network failures; and Prometheus-compatible metrics export for integration with monitoring stacks. Session backup and restore functionality uses 7z compression with incremental backup support, while the event system provides a persistent, distributed pub/sub model with SQLite backing and WebSocket broadcasting. Whether you're recording your first home studio session or managing a complex live sound setup, MAP2 delivers the stability, flexibility, and professional audio quality that serious musicians demand.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="now">
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Now</span>
+        <h3>What I’m building</h3>
+        <p data-profile-now>
+          Advancing the map2-audio platform with focus on reliability, performance tuning, and AI-assisted workflows.
+        </p>
+      </div>
+      <div class="card">
+        <span class="badge">Mission</span>
+        <h3>Why this work matters</h3>
+        <p data-profile-mission>
+          Creating signal-rich, dependable systems that help teams ship faster with confidence.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Skills</span>
+        <h3>Core stack & strengths</h3>
+        <div class="chip-grid" data-profile-skills>
+          <span class="keyword-chip">Audio Systems</span>
+          <span class="keyword-chip">AI Tooling</span>
+          <span class="keyword-chip">Performance Engineering</span>
+          <span class="keyword-chip">Product Leadership</span>
+          <span class="keyword-chip">Automation</span>
+        </div>
+      </div>
+      <div class="card">
+        <span class="badge">Talks & Mentions</span>
+        <h3>Visibility & impact</h3>
+        <ul class="clean-list" data-profile-mentions>
+          <li>Share key talks, demos, or presentations here.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="updates">
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Daily Updates</span>
+        <h3>AI-curated posts</h3>
+        <p>
+          Automated workflows analyze commits and publish only meaningful changes. Expect thoughtful summaries and
+          categorized insights.
+        </p>
+      </div>
+      <div class="card">
+        <span class="badge">Projects</span>
+        <h3>map2-audio focus</h3>
+        <p>
+          The map2-audio project is tracked daily, highlighting performance, reliability, and feature progress.
+        </p>
+      </div>
+      <div class="card">
+        <span class="badge">Highlights</span>
+        <h3>Signal over noise</h3>
+        <p>
+          Updates only appear when the system detects meaningful changes, keeping this feed clean and relevant.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="roadmap">
+    <div class="grid">
+      <div class="card">
+        <span class="badge">Roadmap</span>
+        <h3>Next up</h3>
+        <ul class="clean-list" data-profile-roadmap>
+          <li>Expand automation coverage to additional subsystems.</li>
+          <li>Ship reliability and performance benchmarks.</li>
+          <li>Polish developer tooling for faster iteration.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="badge">Collaboration</span>
+        <h3>Let’s build together</h3>
+        <p>
+          Open to collaboration, advisory work, and high-impact product initiatives.
+        </p>
+        <div class="cta-row">
+          <a class="button primary" href="mailto:hello@matthewmackes.com">Email Matthew</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/matthewmackes/" target="_blank" rel="noreferrer">
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="weather">
+    <div class="card">
+      <span class="badge">Weather</span>
+      <h3>Buffalo, NY</h3>
+      <div class="weather" data-weather>
+        <div class="weather-meta">Loading weather...</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="card">
+      <span class="badge">Contact</span>
+      <h3>Get in touch</h3>
+      <p data-profile-contact>
+        Reach out for partnerships, product strategy, or technical leadership engagements.
+      </p>
+      <div class="cta-row">
+        <a class="button primary" href="mailto:hello@matthewmackes.com">Email Matthew</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/matthewmackes/" target="_blank" rel="noreferrer">
+          LinkedIn Message
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Crafted with calm automation · Built for focus · Updated daily
+  </footer>
+
+  <script src="assets/js/weather.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
